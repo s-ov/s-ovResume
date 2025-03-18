@@ -17,29 +17,31 @@
   <div id="matrix"></div>
   
   <nav class="navbar navbar-dark bg-primary m-2 rounded fixed-top">
-    <ul>
-      <li>
-        <svg>
-          <text x="10%" y="10%" dy=".15em" text-anchor="right">
-              Serhii Ovsiuk
-          </text>
-        </svg>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <li><a id="menu_home" href="#home" class="dropdown-item">HOME</a></li>
+          <li><a id="menu_about" href="#about" class="dropdown-item">ABOUT</a></li>
+          <li><a id="menu_skills" href="#skills" class="dropdown-item">SKILLS</a></li>
+          <li><a id="menu_portfolio" href="#portfolio" class="dropdown-item">PORTFOLIO</a></li>
+        </ul>
       </li>
-      <span style="margin-left: 20em;"><li></li></span>
-      <li><a id="menu_home" href="#home" class="nav-link">HOME</a></li>
-      <li><a id="menu_about" href="#about" class="nav-link">ABOUT</a></li>
-      <li><a id="menu_skills" href="#skills" class="nav-link">SKILLS</a></li>
-      <li><a id="menu_portfolio" href="#portfolio" class="nav-link">PORTFOLIO</a></li>
-      <li>
-        <button id="btn-en" onclick="changeLanguage('en')" class="btn rounded-circle">
+    
+      <li class="nav-item">
+        <button id="btn-en" onclick="changeLanguage('en')" class="btn btn-light rounded-circle">
           🇬🇧
         </button>
-      
-        <button id="btn-uk" onclick="changeLanguage('uk')" class="btn rounded-circle">
+      </li>
+      <li class="nav-item">
+        <button id="btn-uk" onclick="changeLanguage('uk')" class="btn btn-light rounded-circle">
           🇺🇦
         </button>
       </li>
     </ul>
+    
   </nav>
 
   <div id="content"> 
